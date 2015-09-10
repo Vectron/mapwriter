@@ -2,13 +2,14 @@ package mapwriter.forge;
 
 import mapwriter.Mw;
 import mapwriter.overlay.OverlaySlime;
+import net.minecraft.client.gui.GuiDownloadTerrain;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
+import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.event.world.ChunkEvent;
 import net.minecraftforge.event.world.WorldEvent;
-import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class EventHandler {
@@ -33,12 +34,13 @@ public class EventHandler {
 		}
 	}
 	
-	@SubscribeEvent
-	public void eventWorldLoad(WorldEvent.Load event){
-		if(event.world.isRemote){
-			this.mw.onWorldLoad(event.world);
-		}
-	}
+  @SubscribeEvent
+  public void eventGuiOpen(GuiOpenEvent event){
+    // Update the dimension when the "Downloading Terrain" screen appears.
+    if(event.gui instanceof GuiDownloadTerrain) {
+      this.mw.onWorldChange();
+    }
+  }
 
     @SubscribeEvent
     public void eventWorldUnload(WorldEvent.Unload event){

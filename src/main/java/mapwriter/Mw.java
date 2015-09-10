@@ -576,19 +576,18 @@ public class Mw {
 	// Event handlers
 	////////////////////////////////
 	
-	public void onWorldLoad(World world) {
-		//MwUtil.log("onWorldLoad: %s, name %s, dimension %d",
-		//		world,
-		//		world.getWorldInfo().getWorldName(),
-		//		world.provider.dimensionId);
-		
-		this.playerDimension = world.provider.dimensionId;
-		if (this.ready) {
-			this.addDimension(this.playerDimension);
-			this.miniMap.view.setDimension(this.playerDimension);
-		}
-	}
-	
+  public void onWorldChange() {
+    //MwUtil.log("onWorldLoad: %s, name %s, dimension %d",
+    //    world,
+    //    world.getWorldInfo().getWorldName(),
+    //    world.provider.dimensionId);
+    this.playerDimension = mc.theWorld.provider.dimensionId;
+    if (this.ready) {
+      this.addDimension(this.playerDimension);
+      this.miniMap.view.setDimension(this.playerDimension);
+    }
+  }
+  
 	public void onWorldUnload(World world) {
 		//MwUtil.log("onWorldUnload: %s, name %s, dimension %d",
 		//		world,
