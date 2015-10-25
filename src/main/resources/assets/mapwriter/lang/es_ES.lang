@@ -1,0 +1,159 @@
+# Keys
+key.mw_open_gui=Abrir interfaz del mapa
+key.mw_new_marker=Nuevo punto
+key.mw_next_map_mode=Siguiente modo del mapa
+key.mw_next_marker_group=Siguiente grupo de puntos
+key.mw_teleport=Teletransportar al punto
+key.mw_zoom_in=Aumentar zoom al minimapa
+key.mw_zoom_out=Disminuir zoom al minimapa
+key.mw_underground_mode=Modo subterráneo del mapa
+
+#Config Global
+mw.config.linearTextureScaling=Escalamiento de textura lineal activado
+mw.config.linearTextureScaling.tooltip=Activado el scalamiento de textura lineal. (El más cercano es usado de otro modo)
+mw.config.useSavedBlockColours= Usar colores de bloques guardados
+mw.config.useSavedBlockColours.tooltip=
+mw.config.teleportEnabled= Teletransporte activado
+mw.config.teleportEnabled.tooltip=Activar el teletransporte a los puntos del mapa
+mw.config.teleportCommand=Comando para teleportarse
+mw.config.teleportCommand.tooltip=El comando usado para teleportar a un jugador
+
+mw.config.maxChunkSaveDistSq=Máxima distancia de dibujado
+mw.config.maxChunkSaveDistSq.tooltip=El rádio máximo de distancia desde el jugador para los chunks del mapa
+mw.config.mapPixelSnapEnabled= Map pixel snap
+mw.config.mapPixelSnapEnabled.tooltip=
+mw.config.maxDeathMarkers=Máximo de puntos de muertes
+mw.config.maxDeathMarkers.tooltip=La cantidad máxima de puntos de muertes que serán creados
+mw.config.chunksPerTick=Chunks cada tick
+mw.config.chunksPerTick.tooltip=Ajustar en número de chunks máximos que serán actualizados cada tick
+mw.config.saveDirOverride=Sobreescribir directorio de guardado
+mw.config.saveDirOverride.tooltip=Sobreescribir la carpeta que MapWriter usará para guardar capturas y más datos
+mw.config.portNumberInWorldNameEnabled=Número de puerto en los mapas
+mw.config.portNumberInWorldNameEnabled.tooltip=Establecer en falso para desactivar que los nombres de los mundos multijugador contengan el número del puerto de conexión
+mw.config.undergroundMode=Modo subterráneo
+mw.config.undergroundMode.tooltip=Activar el modo subterráneo
+mw.config.regionFileOutputEnabledSP=Archivos de region para un jugador
+mw.config.regionFileOutputEnabledSP.tooltip=Establecer en falso para desactivar guardar los archivos de regiones (archivos mca) en un jugador. Previene la regeneración del mapa si está desactivado
+mw.config.regionFileOutputEnabledMP=Archivos de region para multijugador
+mw.config.regionFileOutputEnabledMP.tooltip=Establecer en falso para desactivar guardar los archivos de regiones (archivos mca) en multijugador. Previene la regeneración del mapa si está desactivado
+mw.config.backgroundTextureMode=
+mw.config.backgroundTextureMode.tooltip=
+mw.config.zoomOutLevels=Niveles para disminuir el zoom
+mw.config.zoomOutLevels.tooltip=Número máximo de pasos que puedes disminuir el zoom. Grandes números empeoran el rendimiento
+mw.config.zoomInLevels=Niveles para aumentar el zoom
+mw.config.zoomInLevels.tooltip=Número máximo de pasos que puedes aumentar el zoom. Esto no afecta en nada al rendimiento
+mw.config.textureSize=
+mw.config.textureSize.tooltip=
+mw.config.moreRealisticMap=Activar mapa realista
+mw.config.moreRealisticMap.tooltip=Activar el uso de un algoritmo diferente que hace parecer el mapa más real
+mw.config.newMarkerDialog=Ventana de nuevo punto
+mw.config.newMarkerDialog.tooltip=Activar para usar la ventana de nuevos puntos
+mw.config.drawMarkersInWorld=Mostrar puntos en el mundo
+mw.config.drawMarkersInWorld.tooltip=Crea un rayo de luz sobre el punto marcado en el mundo
+mw.config.drawMarkersNameInWorld=Mostrar los nombres de los puntos en el mundo
+mw.config.drawMarkersNameInWorld.tooltip=Escribir el nombre del punto sobre la localización en el mundo
+mw.config.drawMarkersDistanceInWorld=Mostrar distancia a puntos en el mundo
+mw.config.drawMarkersDistanceInWorld.tooltip=Mostrar la distancia que hay hasta un punto en el mapa
+
+#Config Temp
+mw.config.overlayModeIndex=
+mw.config.overlayModeIndex.tooltip=
+mw.config.overlayZoomLevel=
+mw.config.overlayZoomLevel.tooltip=
+
+#Config map
+mw.config.map.enabled=Mapa activado
+mw.config.map.enabled.tooltip=Establecer en falto para desactivar esta vista del mapa
+mw.config.map.playerArrowSize=Tamaño de la cruceta de jugador
+mw.config.map.playerArrowSize.tooltip=El tamaño que tiene la flecha que muestra la posición del jugador en el mapa
+mw.config.map.markerSize=Tamaño del punto
+mw.config.map.markerSize.tooltip=El tamaño de los puntos del mapa
+mw.config.map.alphaPercent=Opacidad del mapa
+mw.config.map.alphaPercent.tooltip=Opacidad del mapa en un porcentaje de 0 a 100
+mw.config.map.heightPercent=
+mw.config.map.heightPercent.tooltip=El tamaño del mapa como porcentaje del tamaño de pantalla. Ignorando si hay bordes arriba, abajo, a la izquierda o a la derecha
+mw.config.map.marginTop=Margen superior
+mw.config.map.marginTop.tooltip=
+mw.config.map.marginBottom=Margen inferior
+mw.config.map.marginBottom.tooltip=
+mw.config.map.marginLeft=Margen izquierdo
+mw.config.map.marginLeft.tooltip=
+mw.config.map.marginRight=Margen derecho
+mw.config.map.marginRight.tooltip=
+mw.config.map.rotate=Rotar mapa
+mw.config.map.rotate.tooltip=Establecer en verdadero para rotar el mapa, solo posible en el modo ciruclar
+mw.config.map.circular=Mapa circular
+mw.config.map.circular.tooltip=True = Mapa circular, false = mapa cuadrado
+mw.config.map.coordsEnabled=Activar coordenadas
+mw.config.map.coordsEnabled.tooltip=Establecer en verdadero para mostrar las coordenadas bajo el mapa
+mw.config.map.borderMode=Dibujar borde
+mw.config.map.borderMode.tooltip=Establecer en verdadero para dibujar un borde al rededor del mapa
+mw.config.map.trailMarkerSize=Tamaño del rastro del punto
+mw.config.map.trailMarkerSize.tooltip=El tamaño del rastro que dejarán los puntos en el mapa
+
+mw.config.coordsMode= Modo de coordenadas
+mw.config.coordsMode.tooltip=Cambia entre no, pequeño o largo para ajustar el tamaño de las coordenadas bajo el minimapa
+
+#Gui
+mw.gui.mwgui.help=Ayuda
+mw.gui.mwgui.options=Opciones
+mw.gui.mwgui.dimension=dimensión
+mw.gui.mwgui.group=grupo
+mw.gui.mwgui.overlay=superposición
+mw.gui.mwgui.newversion=Nueva versión
+mw.gui.mwgui.helptext.1=Click izquierdo y arrastrar o la flechas del teclado para moverse por el mapa.
+mw.gui.mwgui.helptext.2=Rueda del ratón o Re/Av Pág para ajustar el zoom del mapa.
+mw.gui.mwgui.helptext.3=Click derecho para crear un nuevo punto.
+mw.gui.mwgui.helptext.4=Click izquierdo para seleccionar un punto y moverlo.
+mw.gui.mwgui.helptext.5=Rueda del ratón sobre un punto seleccionado para cambiar su color.
+mw.gui.mwgui.helptext.6=Ruda del ratón sobre la caja de dimensión o grupo para cambiar su valor.
+mw.gui.mwgui.helptext.7=Click derecho sobre un punto en la lista para editarlo.
+mw.gui.mwgui.helptext.8=Doble click sobre un punto en la lista para centrar la pantalla sobre ese punto.
+mw.gui.mwgui.helptext.9=Click izquierdo sobre un punto en la lista para seleccionar ese punto.
+mw.gui.mwgui.helptext.nextmarkergroup=Siguiente grupo de puntos
+mw.gui.mwgui.helptext.deletemarker=Eliminar el punto seleccionado
+mw.gui.mwgui.helptext.cyclecolour=Rotar el color del punto seleccionado
+mw.gui.mwgui.helptext.centermap=Centrar el mapa sobre el jugador
+mw.gui.mwgui.helptext.centermapplayer=Centrar el mapa sobre un punto seleccionado
+mw.gui.mwgui.helptext.selectnextmarker=Seleccionar el siguiente punto
+mw.gui.mwgui.helptext.teleport=Teleportarse al punto seleccionado o a la posición del cursor
+mw.gui.mwgui.helptext.savepng=Guardar una imagen PNG del área visible del mapa
+mw.gui.mwgui.helptext.regenerate=Regenerar el area visible del mapa en base a sus archivos de región
+mw.gui.mwgui.helptext.undergroundmap=Modo subterráneo del mapa
+mw.gui.mwgui.helptext.markerlist=Mostrar la lista de puntos
+mw.gui.mwgui.status.biome=bioma
+mw.gui.mwgui.status.cursor=cursor
+mw.gui.mwgui.chatmsg.regenmap.1=regenerando
+mw.gui.mwgui.group=groupo
+mw.gui.mwgui.chatmsg.regenmap.2=bloques empezando desde 
+mw.gui.mwgui.chatmsg.merge=juntando a 
+
+mw.gui.mwguidimensiondialog.title=Ajustar la dimensión a
+mw.gui.mwguidimensiondialog.error=dimensión invalida
+
+mw.gui.mwguimarkerdialog.title.new=Nombre del punto
+mw.gui.mwguimarkerdialog.title.edit=Editar nombre del punto
+mw.gui.mwguimarkerdialog.error=los puntos deben tener un nombre
+mw.gui.mwguimarkerdialog.title.group=Grupo del punto
+mw.gui.mwguimarkerdialog.error.group=los puntos deben tener un grupo
+mw.gui.mwguimarkerdialog.title.x=X del punto
+mw.gui.mwguimarkerdialog.error.x=valor inválido
+mw.gui.mwguimarkerdialog.title.y=Y del punto
+mw.gui.mwguimarkerdialog.error.y=valor inválido
+mw.gui.mwguimarkerdialog.title.z=Z del punto
+mw.gui.mwguimarkerdialog.error.z=valor inválido
+
+mw.gui.mwguimarkerdialognew.title.new=Agregar nuevo punto
+mw.gui.mwguimarkerdialognew.title.edit=Editar punto
+mw.gui.mwguimarkerdialognew.editMarkerName=Nombre
+mw.gui.mwguimarkerdialognew.editMarkerGroup=Groupo
+mw.gui.mwguimarkerdialognew.editMarkerX=X
+mw.gui.mwguimarkerdialognew.editMarkerY=Y
+mw.gui.mwguimarkerdialognew.editMarkerZ=Z
+mw.gui.mwguimarkerdialognew.editMarkerColor=Color
+mw.gui.mwguimarkerdialognew.title=Altura de teletransporte
+mw.gui.mwguimarkerdialognew.error=altura invalida
+
+mw.gui.ScrollableColorSelector.Red=Rojo
+mw.gui.ScrollableColorSelector.Green=Verde
+mw.gui.ScrollableColorSelector.Blue=Azul
