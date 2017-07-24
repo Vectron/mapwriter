@@ -53,8 +53,6 @@ public class MwForge
 	@SubscribeEvent
 	public void OnExit(WorldEvent.Unload event){
 		if (Mw.instance.ready){
-			// run the cleanup code when Mw is loaded and the player becomes null.
-			// a bit hacky, but simpler than checking if the connection has closed.
 			Mw.instance.close();
 		}
 	}
