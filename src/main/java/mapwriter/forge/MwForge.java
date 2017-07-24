@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.event.world.WorldEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION,
 		guiFactory = Reference.MOD_GUIFACTORY_CLASS, clientSideOnly = true, updateJSON = Reference.ForgeVersionURL,
@@ -51,18 +51,11 @@ public class MwForge
 	}
 
 	@SubscribeEvent
-	public void onTick(TickEvent.ClientTickEvent event)
-	{
-		if (event.phase == TickEvent.Phase.START)
-		{
-			// run the cleanup code when Mw is loaded and the player becomes
-			// null.
-			// a bit hacky, but simpler than checking if the connection has
-			// closed.
-			if ((Mw.getInstance().ready) && (Minecraft.getMinecraft().player == null))
-			{
-				Mw.getInstance().close();
-			}
+	public void OnExit(WorldEvent.Unload event){
+		if (Mw.instance.ready){
+			// run the cleanup code when Mw is loaded and the player becomes null.
+			// a bit hacky, but simpler than checking if the connection has closed.
+			Mw.instance.close();
 		}
 	}
 }
